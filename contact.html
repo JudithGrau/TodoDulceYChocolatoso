@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Dulce y Chocolatoso</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="pd-2">
+		<div class="logo">
+			<img src="./img/logo.png" alt="imagen de logo">
+		</div>
+        <nav class="menu">
+			<ul>
+				<li><a class="cta" href="./index.html">Home</a></li>
+				<li><a class="cta" href="./products.html">Products</a></li>
+				<li><a class="cta" href="./fechas_especiales.html">Fechas Especiales</a></li>
+				<li><a class="cta" href="./about_us.html">About US</a></li>
+				<li><a class="cta" href="./contact.html">Contact Us</a></li>
+			</ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <form action="#" method="GET">
+                <fieldset class="fo">
+                    <legend>Formulario de Contacto</legend>
+                    <label for="name">Nombre y Apellido*:</label>
+					<input class="nombre" type="text" name="name" id="name" required>
+
+					<label for="email">Correo electrónico*:</label>
+					<input class="email" type="email" name="email" id="email" required>
+
+					<label for="age">Tu edad*:</label>
+					<select name="age" id="age">
+						<option value="null" disabled selected>Seleccioná tu edad</option>
+						<option value="1">menor de 18</option>
+						<option value="1">19-30</option>
+						<option value="2">31-45</option>
+						<option value="3">Mayor de 45</option>
+					</select>
+
+                    <label for="Consulta">Consulta:</label>
+					<textarea class="textarea" name="Consulta" id="Consulta" cols="30" rows="10" style="resize:none" placeholder="Escribe aquí tu consulta" required></textarea>
+                    <label>
+                        <input type="checkbox" value="1">
+                        Quiero recibir novedades y ofertas
+                    </label>
+                    <input type="reset" value="Limpiar Formulario">
+                    <input type="submit" value="Enviar Formulario">
+
+                </fieldset>
+            </form>
+        </section>
+        
+
+
+    </main>
+
+	<footer>
+		<div class="foot">
+			<Section class="sm">
+				<div class="sm__icon"><span class="iconify" data-icon="emojione-monotone:heart-with-ribbon" data-inline="false" width=2em height=2em></span></div>
+				
+				<h3>Like & follow</h3>
+				<ul class="sm__link">
+					<li>
+						<a href="https://www.facebook.com/webtododulceychocolatoso/"><span class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
+						<a href="https://www.instagram.com/tododulceychocolatoso/"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+						<a href="https://www.youtube.com"><span class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
+					</li>
+				</ul>
+			</Section>
+			<section class="store">
+				<div class="sm__icon"><span class="iconify" data-icon="whh:chocolate" data-inline="false" width=2em height=2em></span></div>
+				
+				<h3>Order on line</h3>
+				<div>
+					<a href="./products.html">Ver</a>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="sm__icon"><span class="iconify" data-icon="vs:rose" data-inline="false" width=2em height=2em></span></div>
+				
+				<h3>Contact us</h3>
+				<div>
+					<a href="./contact.html">Click here</a>
+				</div>
+			</section>
+		</div>
+    </footer>
+   
+</body>
+</html>
