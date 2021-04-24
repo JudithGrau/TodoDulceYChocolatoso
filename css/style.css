@@ -233,7 +233,7 @@ img{
     position: absolute;
 }
 .frente{
-    background: crimson;
+    background: rgb(238, 198, 233);
 }
 .atras{
     background: rgb(238, 198, 233);
@@ -302,6 +302,33 @@ img{
     grid-column-start: span 2;
 }
 
+/*----------------------------------------ABOUT US---------------------------------------------------------*/
+
+.about h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-text);
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+#nav{
+    background-color: var(--color-text) !important;
+}
+.nav-item{
+    font-family: 'Nunito', sans-serif !important;
+}
+.text{
+    font-family: 'Nunito', sans-serif;
+}
+.nav-link{
+    color: rgb(179, 37, 160)  !important;
+}
+#icono{
+    color: black !important;
+}
+.dropdown-item{
+    background-color: var(--color-text);
+}
 /*----------------------------------------CONTACT US---------------------------------------------------------*/
 form{
     background: rgb(243, 161, 232);
