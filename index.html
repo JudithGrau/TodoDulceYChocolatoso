@@ -1,81 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Dulce y Chocolatoso</title>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
+		<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
+		<title>Todo Dulce y Chocolatoso</title>
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
 <body>
-    <header class="pd-2">
-		<div class="logo">
-			<img src="./img/logo.png" href="./index.html" alt="imagen de logo">
-		</div>
-        <nav class="menu">
-			<ul>
-				<li><a class="cta" href="./index.html">Home</a></li>
-				<li><a class="cta" href="./products.html">Products</a></li>
-				<li><a class="cta" href="./fechas_especiales.html">Fechas Especiales</a></li>
-				<li><a class="cta" href="./about_us.html">About US</a></li>
-				<li><a class="cta" href="./contact.html">Contact Us</a></li>
-			</ul>
-        </nav>
-    </header>
-	
-    <main>
-		<!--Foto Principal-->
-        <div class="hero">
-			<div class= "hero__txt">
-				<h1 class="hero__title">Endulzá esos momentos únicos</h1>
-				<div class="hero__link">
-					<a href="./products.html"  class="cta">Comprá</a>
-					<a href="./products.html"  class="cta cta--pri">Nuestros productos</a>
-				</div>
+	<div class="container-fluid">
+		<header class="header">
+			<div class="header__logo text-center mb-2">
+				<a href="./index.html"><img class="text-center" src="./img/logo.png" alt="imagen de logo"></a>
 			</div>
-        </div>
-		<section class="galeria">
-			<!--galería de productos-->
-			<h2>Los productos más vendidos</h2>
-			<div class="imagenes">
+			<nav class="header__nav navbar navbar-expand-lg navbar-light bg-light" id="nav">
+				<button class="header__nav--button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<img  class="img-fluid w-100 h-auto" src="./img/logo.png" alt="imagen de logo">
+				</button>
+				
+				<div class="header__nav--navbar collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav col-12 row ml-4 pr-0">
+						<li class="nav-item active col-2 font-weight-bold">
+							<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown col-3  mr-0 pr-0 font-weight-bold">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Products
+							</a>
+							<div class="dropdown-menu pb-0 pt-0" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="./products.html">Galería de productos</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="./ramo_rosas.html">Ramo de rosas</a>
+								<a class="dropdown-item" href="./rosas_pack.html">Pack de rosas</a>
+								<a class="dropdown-item" href="./bombones.html">Bombones besos</a>
+								<a class="dropdown-item" href="./figuras_chocolate.html">Figuras de chocolate</a>
+						</li>
+						<li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
+							<a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
+						</li>
+						<li class="nav-item col-2 font-weight-bold">
+							<a class="nav-link mr-3" href="./about_us.html">About us</a>
+						</li>
+						<li class="nav-item col-2 font-weight-bold">
+							<a class="nav-link" href="./contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+			<main>
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+					  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-interval="4000">
+							<img src="./img/slide4-min.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h2 class="slide__title">Endulzá esos momentos únicos</h2>
+								<p>Con chocolate de excelente calidad!</p>
+							</div>
+						</div>
+						<div class="carousel-item" data-interval="4000">
+							<img src="./img/slide2-min.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h2 class="slide__title">Regalá chocolates a tus seres queridos</h2>
+							<p>Siempre personalizado</p>
+							</div>
+						</div>
+						<div class="carousel-item" data-interval="4000">
+							<img src="./img/slide8-min.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h2 class="slide__title">Contactanos y hacé tu pedido</h2>
+							<p>Seguinos en Instagram y Facebook</p>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<div class="container-fluid_index">
+					<div class="row_index">
+						<section class="galeria">
+						<!--galería de productos-->
+							<h2 class="ejemplo">Los productos más vendidos</h2>
+							<div class="imagenes"></div>
+						</section>
+					</div>
+				</div>
+
+				
+				
+			</main>
+
+		<footer class="footer">
+			<div class="footer__contenedor foot">
+				<Section class="footer__contenedor--1 sm">
+					<div class="footer__contenedor--1 sm__icon"><span class="iconify" data-icon="emojione-monotone:heart-with-ribbon" data-inline="false" width=2em height=2em></span></div>
+					
+					<h3>Like & follow</h3>
+					<ul class="sm__link">
+						<li>
+							<a href="https://www.facebook.com/webtododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
+							<a href="https://www.instagram.com/tododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+							<a href="https://www.youtube.com"><span id="icono" class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
+						</li>
+					</ul>
+				</Section>
+				<section class="footer__contenedor--2 store">
+					<div class="sm__icon"><span class="iconify" data-icon="whh:chocolate" data-inline="false" width=2em height=2em></span></div>
+					
+					<h3>Order on line</h3>
+					<div>
+						<a href="./products.html" id="icono">Ver</a>
+					</div>
+				</section>
+				<section class="footer__contenedor--3 contact">
+					<div class="sm__icon"><span class="iconify" data-icon="vs:rose" data-inline="false" width=2em height=2em></span></div>
+					
+					<h3>Contact us</h3>
+					<div>
+						<a href="./contact.html" id="icono">Click here</a>
+					</div>
+				</section>
 			</div>
-		</section>
-        
-    </main>
-    
-    <footer>
-		<div class="foot">
-			<Section class="sm">
-				<div class="sm__icon"><span class="iconify" data-icon="emojione-monotone:heart-with-ribbon" data-inline="false" width=2em height=2em></span></div>
-				
-				<h3>Like & follow</h3>
-				<ul class="sm__link">
-					<li>
-						<a href="https://www.facebook.com/webtododulceychocolatoso/"><span class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
-						<a href="https://www.instagram.com/tododulceychocolatoso/"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
-						<a href="https://www.youtube.com"><span class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
-					</li>
-				</ul>
-			</Section>
-			<section class="store">
-				<div class="sm__icon"><span class="iconify" data-icon="whh:chocolate" data-inline="false" width=2em height=2em></span></div>
-				
-				<h3>Order on line</h3>
-				<div>
-					<a href="./products.html">Ver</a>
-				</div>
-			</section>
-			<section class="contact">
-				<div class="sm__icon"><span class="iconify" data-icon="vs:rose" data-inline="false" width=2em height=2em></span></div>
-				
-				<h3>Contact us</h3>
-				<div>
-					<a href="./contact.html">Click here</a>
-				</div>
-			</section>
-		</div>
-    </footer>
-   
+		</footer>
+	</div>
+	<!--js bootstrap 4.6.0 -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
