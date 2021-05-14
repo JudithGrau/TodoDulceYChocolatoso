@@ -1,0 +1,56 @@
+//FOR AND INTERPOLATIONS
+@for $i from 1 through 30 {
+    .cols-#{$i * 5} {
+        width: $i * 5%;
+    }
+}
+
+//IF
+$color_p: rgb(179, 37, 160);;
+
+.for__text--p {
+    @if ($color_p == azul){
+        color: blue;
+    } @else if ($color_p == rgb(179, 37, 160)) {
+        color: $color_p;
+    } @else{
+        color: pink;
+    }
+}
+
+//FOR
+.for2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.color_grid {
+    width: 100px;
+    height: 100px;
+}
+@for $i from 1 through 14 {
+    .color_grid:nth-child(#{$i}){
+        background-color: lighten(rgb(158, 3, 137), $i * 5);
+    }
+}
+
+//LISTAS Y MAPAS
+
+$bp: (
+    m: 640px,
+    l: 1024px
+);
+
+@media screen and (min-width: map-get($bp,m)){
+    @for $i from 1 through 30 {
+        .cols-m-#{$i * 5}{
+            width: $i * 5%;
+        }
+    }
+}
+@media screen and (min-width: map-get($bp,l)){
+    @for $i from 1 through 30 {
+        .cols-l-#{$i * 5}{
+            width: $i * 5%;
+        }
+    }
+}

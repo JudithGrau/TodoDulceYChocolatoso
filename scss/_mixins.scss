@@ -1,0 +1,25 @@
+@import 'color';
+
+@mixin button {
+    display: inline;
+    margin: 0 .5em;
+    padding: .47em 1.5em;
+    border-radius: .2em;
+    font-weight: 800;
+    border: 1px solid $color-claro;
+    background: $color-claro;
+    a {
+        color: $color-oscuro;
+    }
+    &:hover {
+        background: $color-claro-hover;
+        border: 1px solid $color-claro-hover;
+        a {
+            color: $color-oscuro;
+        }
+    }
+}
+
+button {
+    @include button;
+}
