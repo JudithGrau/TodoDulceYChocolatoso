@@ -372,6 +372,10 @@ header {
 
 .slide img {
   height: calc(120vh - 208px); }
+  @media screen and (max-width: 768px) {
+    .slide img {
+      width: 300px;
+      height: 200px; } }
 
 .slide__title {
   font-family: "Nunito", sans-serif !important;
