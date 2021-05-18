@@ -76,22 +76,7 @@ header{
 }
 
 /*------MAIN-HERO------*/
-/* .hero{
-    height: calc(100vh - 208px);
-    background: url(../img/foto_principal.jpg) no-repeat center/cover;
-    background-attachment: fixed;
-    position: relative;
-}
-.hero__txt{
-    width: fit-content;
-    height: 300px;
-    position: absolute;
-        top: 40%;
-        left: 0;
-        right: 0;
-    margin: auto;
-    text-align: center;
-} */
+
 .slide{
     margin-top: 10px;
 }
@@ -110,32 +95,7 @@ header{
     text-transform: uppercase;
     margin-bottom: .5em;
 }
-/* .cta{
-    margin: 0 .5em;
-    padding: .47em 1.5em;
-    border-radius: .2em;
-    font-weight: 800;
-    background: $color-claro;
-    border: 1px solid $color-claro;
-    color: $color-oscuro;
-}
-.cta:hover{
-    background: $color-claro-hover;
-    border: 1px solid $color-claro-hover;
-    color: $color-oscuro;
-}
-.cta--pri{
-    background: $color-oscuro;
-    border: 1px solid $color-oscuro;
-    color: $color-claro;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-}
-.cta--pri:hover{
-    background: $color-oscuro-hover;
-    border: 1px solid $color-oscuro-hover;
-    color: $color-claro;
-} */
+
 
 /*------MAIN-GALERIA------*/
 
@@ -203,11 +163,7 @@ header{
     color: $color-claro;
     margin: 0.5em;
 }
-/* .imagenes{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-} */
+
 .picture{
     height: 13em;
 }
@@ -537,22 +493,4 @@ footer .contact a{
 /* main,footer{
     display: none;
 } */
-
-
-
-/*------------------------------------------------------------------------------------------------------*/
-
-/* .tabla ul{
-    list-style-type: disc;
-}
-table, th, td{
-    border: 1 px solid black;
-}
-article{
-    color: #603cb3;
-}
-table,th,td{
-    border: 2px solid olive;
-} */
-
 
