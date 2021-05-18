@@ -758,3 +758,11 @@ footer .contact a {
 .boton:hover {
   color: #fff;
   opacity: .8; }
+
+.sm__icon {
+  color: inherit;
+  text-align: center;
+  padding: 20px;
+  background-color: #e275d4;
+  border-radius: 50%;
+  display: inline-block; }
