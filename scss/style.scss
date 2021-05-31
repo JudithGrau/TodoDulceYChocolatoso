@@ -17,6 +17,7 @@
 html{
     font-size: 16px;
     font-family: $fuente-principal;
+    scroll-behavior: smooth;
 }
 body{
     /* position: relative; */
@@ -105,6 +106,10 @@ p, a, li{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.header__nav--navbar{
+    position: sticky;
+    top: 0;
 }
 .header__nav--button{
     body.dark & {

@@ -306,7 +306,8 @@ button {
 
 html {
   font-size: 16px;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth; }
 
 body {
   /* position: relative; */
@@ -387,6 +388,10 @@ p, a, li {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
+
+.header__nav--navbar {
+  position: sticky;
+  top: 0; }
 
 body.dark .header__nav--button {
   background: #b325a0; }
