@@ -1039,7 +1039,7 @@ p.text-muted {
 @media screen and (max-width: 768px) {
   .img-responsive {
     width: 200px;
-    margin-left: 100px; }
+    margin-left: 16px; }
   .blog-post {
     padding: 2rem;
     flex-direction: column; }
