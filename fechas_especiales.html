@@ -8,14 +8,21 @@
 	<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
     <title>Todo Dulce y Chocolatoso</title>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="./img/logo.ico">
 </head>
 <body>
-	
     <header class="header">
+		<div class="modo_nocturno">
+			<button class="switch mr-3" id="switch">
+				<span><i class="fas fa-sun"></i></span>
+				<span><i class="fas fa-moon"></i></span>
+			</button>
+		</div>
 		<div class="header__logo text-center mb-2">
-			<img src="./img/logo.png" alt="imagen de logo">
+			<a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
 		</div>
 		<nav class="header__nav navbar navbar-expand-lg navbar-light bg-light" id="nav">
 			<button class="header__nav--button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,36 +32,31 @@
 			<div class="header__nav--navbar collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav col-12 row ml-4 pr-0">
 					<li class="nav-item active col-2 font-weight-bold">
-						<a class="nav-link ml-3" href="./index.html">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
-
 					<li class="nav-item dropdown col-3  mr-0 pr-0 font-weight-bold">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Products
 						</a>
 						<div class="dropdown-menu pb-0 pt-0" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="./products.html">Galería de productos</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="./ramo_rosas.html">Ramo de rosas</a>
-							<a class="dropdown-item" href="./rosas_pack.html">Pack de rosas</a>
-							<a class="dropdown-item" href="./bombones.html">Bombones besos</a>
-							<a class="dropdown-item" href="./figuras_chocolate.html">Figuras de chocolate</a>
+								<a class="dropdown-item font-weight-bold" href="./products.html">Galería de productos</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item font-weight-bold" href="./ramo_rosas.html">Ramo de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./rosas_pack.html">Pack de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones</a>
+								<a class="dropdown-item font-weight-bold" href="./figuras_chocolate.html">Figuras de chocolate</a>
+						</div>
 					</li>
-
 					<li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
 						<a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
 					</li>
-
 					<li class="nav-item col-2 font-weight-bold">
 						<a class="nav-link mr-3" href="./about_us.html">About us</a>
 					</li>
-
 					<li class="nav-item col-2 font-weight-bold">
 						<a class="nav-link" href="./contact.html">Contact</a>
 					</li>
-				
 				</ul>
-				
 			</div>
 		</nav>
 	</header>
@@ -112,7 +114,6 @@
 					<li>
 						<a href="https://www.facebook.com/webtododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
 						<a href="https://www.instagram.com/tododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
-						<a href="https://www.youtube.com"><span id="icono" class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
 					</li>
 				</ul>
 			</Section>
@@ -133,10 +134,12 @@
 				</div>
 			</section>
 		</div>
+		<p class="text-muted col-12 mt-4">&copy; Judith Grau 2021</p>
 	</footer>
-</div>
+<!-- </div> -->
 <!--js bootstrap 4.6.0 -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

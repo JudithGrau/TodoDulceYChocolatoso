@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
 	<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
-    <title>Todo Dulce y Chocolatoso</title>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<title>Todo Dulce y Chocolatoso</title>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="./img/logo.ico">
 </head>
 <body>
 	<div class="container-fluid">
 
 		<header class="header">
+			<div class="modo_nocturno">
+				<button class="switch mr-3" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+			</div>
 			<div class="row-fluid">
-				<div class="header__logo text-center mb-2">
-					<a href="./index.html"><img class="text-center" src="./img/logo.png" alt="imagen de logo"></a>
+				<div class="header__logo form-date text-center mb-2">
+					<a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
 				</div>
 			</div>
 
@@ -38,12 +46,13 @@
 								Products
 							</a>
 							<div class="dropdown-menu pb-0 pt-0" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="./products.html">Galería de productos</a>
+								<a class="dropdown-item font-weight-bold" href="./products.html">Galería de productos</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="./ramo_rosas.html">Ramo de rosas</a>
-								<a class="dropdown-item" href="./rosas_pack.html">Pack de rosas</a>
-								<a class="dropdown-item" href="./bombones.html">Bombones besos</a>
-								<a class="dropdown-item" href="./figuras_chocolate.html">Figuras de chocolate</a>
+								<a class="dropdown-item font-weight-bold" href="./ramo_rosas.html">Ramo de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./rosas_pack.html">Pack de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones</a>
+								<a class="dropdown-item font-weight-bold" href="./figuras_chocolate.html">Figuras de chocolate</a>
+							</div>
 						</li>
 						<li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
 							<a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
@@ -58,7 +67,6 @@
 				</div>
 			</nav>
 		</header>
-		
 		<main>
 			<section>
 				<form action="#" method="GET">
@@ -97,14 +105,19 @@
 							</div>
 
 							<div class="form-group col-md-12 text-center">
-								<input type="reset" value="Limpiar Formulario">
-								<input type="submit" value="Enviar Formulario">
+								<input class="blog-post__cta text-center border-0" type="reset" value="Limpiar Formulario">
+								<input class="blog-post__cta text-center border-0" type="submit" value="Enviar Formulario">
 							</div>
 					</div>
 					
 				</form>
 			</section>
-			
+			<div class="form-date text-center">
+				<p><span class="iconify" data-icon="akar-icons:location" data-inline="false"></span> Av.Emilio Castro 5800, CABA</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3134900077957!2d-58.50655118491855!3d-34.64678508044841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ac13454773%3A0x486c88ebe6651904!2sAv.%20Emilio%20Castro%205800%2C%20C1440CLT%20CABA!5e0!3m2!1ses!2sar!4v1622145618795!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<p><span class="iconify" data-icon="fe:mail" data-inline="false"></span> info@tododulceychocolatoso.com</p>
+				<p><span class="iconify" data-icon="bi:telephone" data-inline="false"></span> +54 9 11 682-0000</p>
+			</div>
 
 
 			</main>
@@ -120,7 +133,6 @@
 					<li>
 						<a href="https://www.facebook.com/webtododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
 						<a href="https://www.instagram.com/tododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
-						<a href="https://www.youtube.com"><span id="icono" class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
 					</li>
 				</ul>
 			</Section>
@@ -141,11 +153,12 @@
 				</div>
 			</section>
 		</div>
+		<p class="text-muted col-12 mt-4">&copy; Judith Grau 2021</p>
 	</footer>
 </div>
 <!--js bootstrap 4.6.0 -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-   
+<script src="js/main.js"></script>
 </body>
 </html>

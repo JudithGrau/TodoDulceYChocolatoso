@@ -8,19 +8,27 @@
     <meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
     <title>Todo Dulce y Chocolatoso</title>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="./img/logo.ico">
 </head>
 <body>
     <div class="container-fluid">
         <header class="header">
+            <div class="modo_nocturno">
+				<button class="switch mr-3" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+			</div>
 			<div class="header__logo text-center mb-2">
-				<a href="./index.html"><img class="text-center" src="./img/logo.png" alt="imagen de logo"></a>
+				<a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
 			</div>
 			<nav class="header__nav navbar navbar-expand-lg navbar-light bg-light" id="nav">
 				<button class="header__nav--button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<img  class="img-fluid w-100 h-auto" src="./img/logo.png" alt="imagen de logo">
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				
 				<div class="header__nav--navbar collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,12 +41,13 @@
 								Products
 							</a>
 							<div class="dropdown-menu pb-0 pt-0" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="./products.html">Galería de productos</a>
+								<a class="dropdown-item font-weight-bold" href="./products.html">Galería de productos</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="./ramo_rosas.html">Ramo de rosas</a>
-								<a class="dropdown-item" href="./rosas_pack.html">Pack de rosas</a>
-								<a class="dropdown-item" href="./bombones.html">Bombones besos</a>
-								<a class="dropdown-item" href="./figuras_chocolate.html">Figuras de chocolate</a>
+								<a class="dropdown-item font-weight-bold" href="./ramo_rosas.html">Ramo de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./rosas_pack.html">Pack de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones</a>
+								<a class="dropdown-item font-weight-bold" href="./figuras_chocolate.html">Figuras de chocolate</a>
+                            </div>
 						</li>
 						<li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
 							<a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
@@ -76,7 +85,8 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button><a href="./ramo_rosas.html">Ver</a></button>
+                                <a href="#ramo_rosas" class="blog-post__cta">Ver productos1</a>
+                                <!-- <button><a href="./ramo_rosas.html">Ver</a></button> -->
                             </div>
                         </div>
                         <br>
@@ -98,7 +108,8 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button><a href="./bombones.html">Ver</a></button>
+                                <a href="#bombones" class="blog-post__cta">Ver productos2</a>
+                                <!-- <button><a href="./ramo_rosas.html">Ver</a></button> -->
                             </div>
                         </div>
                     </div>
@@ -121,7 +132,8 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button><a href="./figuras_chocolate.html">Ver</a></button>
+                                <a href="#pack_rosas" class="blog-post__cta">Ver productos3</a>
+                                <!-- <button><a href="./ramo_rosas.html">Ver</a></button> -->
                             </div>
                         </div>
                         <br>
@@ -142,7 +154,8 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button><a href="./rosas_pack.html">Ver</a></button>
+                                <a href="#figuras" class="blog-post__cta">Ver productos4</a>
+                                <!-- <button><a href="./ramo_rosas.html">Ver</a></button> -->
                             </div>
                         </div>
                     </div>
@@ -155,7 +168,7 @@
                 <!-- Container for all products -->
                 <div class="container mb-5 mt-5">
                     <div class="row">
-                        <h4 class="titulo_cards">Ramos de rosas</h4>
+                        <h4 class="titulo_cards"><a name= ramo_rosas></a> Ramos de rosas</h4>
                         
                         <!-- Card 1 -->
                         <div class="col-md-4">
@@ -164,7 +177,7 @@
                                     <img src="img/ramo3-min.jpg" alt="" class="redondeado w-100" >
                                     <h5>Ramos</h5>
                                     <!--Card info -->
-                                    <div class="mt-3 info">
+                                    <div class="info mt-3 ">
                                         <span class="text1 d-block">Lorem ipsum dolor sit, amet.</span>
                                         <span class="text1">Lorem, ipsum dolor.</span>
                                     </div>
@@ -181,9 +194,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 ramos text-center text-white mt-3 cursor">
+                                <a href="./ramo_rosas.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 1 end here-->
@@ -212,9 +226,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 ramos text-center text-white mt-3 cursor">
+                                <a href="./ramo_rosas.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -243,15 +258,16 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 ramos text-center text-white mt-3 cursor">
+                                <a href="./ramo_rosas.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 3 end here-->
                     </div>
                     <div class="row">
-                        <h4 class="titulo_cards">Pack de rosas</h4>
+                        <h4 class="titulo_cards"><a name= pack_rosas></a>Pack de rosas</h4>
 
                         <!-- Card 2 -->
                         <div class="col-md-4">
@@ -276,9 +292,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 pack text-center text-white mt-3 cursor">
+                                <a href="./rosas_pack.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -305,9 +322,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 pack text-center text-white mt-3 cursor">
+                                <a href="./rosas_pack.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -334,15 +352,16 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 pack text-center text-white mt-3 cursor">
+                                <a href="./rosas_pack.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
                     </div>
                     <div class="row">
-                        <h4 class="titulo_cards">Bombones</h4>
+                        <h4 class="titulo_cards"><a name= bombones></a>Bombones</h4>
 
                         <!-- Card 2 -->
                         <div class="col-md-4">
@@ -367,9 +386,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 bombones text-center text-white mt-3 cursor">
+                                <a href="./bombones.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -396,9 +416,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 bombones text-center text-white mt-3 cursor">
+                                <a href="./bombones.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -425,15 +446,16 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 bombones text-center text-white mt-3 cursor">
+                                <a href="./bombones.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
                     </div>
                     <div class="row">
-                        <h4 class="titulo_cards">Figuras de chocolate</h4>
+                        <h4 class="titulo_cards"><a name= figuras></a>Figuras de chocolate</h4>
 
                         <!-- Card 2 -->
                         <div class="col-md-4">
@@ -458,9 +480,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 figuras text-center text-white mt-3 cursor">
+                                <a href="./figuras_chocolate.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -487,9 +510,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 figuras text-center text-white mt-3 cursor">
+                                <a href="./figuras_chocolate.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -516,9 +540,10 @@
                                     <!--Card info ends here -->
                                 </div>
                                 <!-- button for cards -->
-                                <div class="p-3 figuras text-center text-white mt-3 cursor">
+                                <a href="./figuras_chocolate.html" class="blog-post__cta text-center">Agregar al carrito</a>
+                                <!-- <div class="p-3 ramos text-center text-white mt-3 cursor">
                                     <span class="text-uppercase">Agregar al carrito</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Card 2 end here-->
@@ -540,7 +565,6 @@
                     <li>
                         <a href="https://www.facebook.com/webtododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
                         <a href="https://www.instagram.com/tododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
-                        <a href="https://www.youtube.com"><span id="icono" class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
                     </li>
                 </ul>
             </Section>
@@ -561,10 +585,12 @@
                 </div>
             </section>
         </div>
+        <p class="text-muted col-12 mt-4">&copy; Judith Grau 2021</p>
     </footer>
 </div>
 <!--js bootstrap 4.6.0 -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

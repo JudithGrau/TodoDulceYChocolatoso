@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
-		<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
-        <title>Todo Dulce y Chocolatoso</title>
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">		
-		
-		<link rel="stylesheet" href="css/main.css">
-    </head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
+	<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
+	<title>Todo Dulce y Chocolatoso</title>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">		
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="./img/logo.ico">
+</head>
 <body>
 	<div class="container-fluid">
 		<header class="header">
+			<div class="modo_nocturno">
+				<button class="switch mr-3" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+			</div>
+
 			<div class="header__logo text-center mb-2">
-				<a href="./index.html"><img class="text-center" src="./img/logo.png" alt="imagen de logo"></a>
+				<a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
 			</div>
 			<nav class="header__nav navbar navbar-expand-lg navbar-light bg-light" id="nav">
 				<button class="header__nav--button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<img  class="img-fluid w-100 h-auto" src="./img/logo.png" alt="imagen de logo">
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				
 				<div class="header__nav--navbar collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,12 +41,13 @@
 								Products
 							</a>
 							<div class="dropdown-menu pb-0 pt-0" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="./products.html">Galería de productos</a>
+								<a class="dropdown-item font-weight-bold" href="./products.html">Galería de productos</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="./ramo_rosas.html">Ramo de rosas</a>
-								<a class="dropdown-item" href="./rosas_pack.html">Pack de rosas</a>
-								<a class="dropdown-item" href="./bombones.html">Bombones besos</a>
-								<a class="dropdown-item" href="./figuras_chocolate.html">Figuras de chocolate</a>
+								<a class="dropdown-item font-weight-bold" href="./ramo_rosas.html">Ramo de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./rosas_pack.html">Pack de rosas</a>
+								<a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones</a>
+								<a class="dropdown-item font-weight-bold" href="./figuras_chocolate.html">Figuras de chocolate</a>
+							</div>
 						</li>
 						<li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
 							<a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
@@ -53,26 +62,53 @@
 				</div>
 			</nav>
 		</header>
-    
 		<div class="row">
 			<main>
-				<section class="about">
-					<h2 class="about__h2 text-center mt-5 mb-5">NUESTRA HISTORIA</h2>
-					<div class="about__img col-12">
-						<img class="img-fluid w-100 h-auto" src="img/nosotros-min.jpg" alt="nosotros">
+				<h1>Nosotros</h1>
+				<div class="container1">
+					<div class="box">
+						<img class="img_nosotros" src="img/nosotros-min.jpg" alt="nosotros">
+						<div class="capa">
+							<h4>Todo dulce y chocolatoso</h4>
+						</div>
 					</div>
-					<div class="about__text col-12">
-						<p class="about__text--p text-center mt-5 mb-5 p-2">
-							<b>Todo dulce y chocolatoso</b> es el resultado de una historia familiar, que comenzó en épocas difíciles, donde había que idearse una nueva forma de mantener la estabilidad económica. <br>
-							Sintiendo curiosidad por la elaboración de los chocolates en todas sus formas, se despertó la pasión por crear nuevas formas de ofrecerlos. <br> 
-							En sus inicios, sólo ofrecía algunos chocolates a su círculo más cercano y poco a poco, por recomendación aumentaron las ventas. <br>
-							Luego, viendo la gran aceptación y agradecimiento de la gente que lo recibía, se incorporaron nuevos productos. Esto fue posible gracias a la ayuda recibida de miembros de la familia, quienes fueron aprendiendo el oficio. <br>
-							Desde sus inicios se trabajó con una materia prima de primer nivel, como ser el chocolate alpino, y sus rellenos, además de ser sabrosos, son de excelente calidad. <br>
-							Actualmente, las ventas también se realizan a través de las distintas redes sociales como Instagram, Facebook, whatsapp y Messenger. Como así también por Mercado Libre, quien brinda a quienes compran, la posibilidad de pagar en distintos medios de pago y a su vez en cuotas. <br>
+					<div class="about__text col-md-6">
+						<p class="about__text--p1">
+							<b>Todo dulce y chocolatoso</b> es el resultado de una historia familiar, que desde sus inicios se trabajó con una materia prima de primer nivel, como ser el chocolate alpino, y sus rellenos, además de ser sabrosos, son de excelente calidad.
+						</p>
+						<p class="about__text--p2">
+							Actualmente, las ventas también se realizan a través de las distintas redes sociales como Instagram, Facebook, whatsapp y Messenger.
+						</p>
+						<p class="about__text--p3">
 							Agradecidos por la gran aceptación, cariño y repercusión del producto elaborado, esperamos seguir formando parte de esos <b> momentos únicos en sus vidas</b>. <br>
 						</p>
 					</div>
-				</section>
+					<!-- <div class="box">
+						<img src="img/nosotros-min.jpg" alt="nosotros">
+						<div class="capa">
+							<h4>todo dulce y chocolatoso</h4>
+						</div>
+					</div> -->
+				</div>
+				<!-- <div class="ab">
+					<section class="about">
+						<h2 class="about__h2 text-center mt-5 mb-5">NUESTRA HISTORIA</h2>
+						<div class="about__img col-12">
+							<img class="img-fluid w-100 h-auto" src="img/nosotros-min.jpg" alt="nosotros">
+						</div>
+						<div class="about__text col-12">
+							<p class="about__text--p text-center mt-5 mb-5 p-2">
+								<b>Todo dulce y chocolatoso</b> es el resultado de una historia familiar, que comenzó en épocas difíciles, donde había que idearse una nueva forma de mantener la estabilidad económica. <br>
+								Sintiendo curiosidad por la elaboración de los chocolates en todas sus formas, se despertó la pasión por crear nuevas formas de ofrecerlos. <br> 
+								En sus inicios, sólo ofrecía algunos chocolates a su círculo más cercano y poco a poco, por recomendación aumentaron las ventas. <br>
+								Luego, viendo la gran aceptación y agradecimiento de la gente que lo recibía, se incorporaron nuevos productos. Esto fue posible gracias a la ayuda recibida de miembros de la familia, quienes fueron aprendiendo el oficio. <br>
+								Desde sus inicios se trabajó con una materia prima de primer nivel, como ser el chocolate alpino, y sus rellenos, además de ser sabrosos, son de excelente calidad. <br>
+								Actualmente, las ventas también se realizan a través de las distintas redes sociales como Instagram, Facebook, whatsapp y Messenger. Como así también por Mercado Libre, quien brinda a quienes compran, la posibilidad de pagar en distintos medios de pago y a su vez en cuotas. <br>
+								Agradecidos por la gran aceptación, cariño y repercusión del producto elaborado, esperamos seguir formando parte de esos <b> momentos únicos en sus vidas</b>. <br>
+							</p>
+						</div>
+					</section>
+				</div> -->
 			</main>
 		</div>
 	
@@ -86,7 +122,6 @@
 						<li>
 							<a href="https://www.facebook.com/webtododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
 							<a href="https://www.instagram.com/tododulceychocolatoso/"><span id="icono" class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
-							<a href="https://www.youtube.com"><span id="icono" class="iconify" data-icon="grommet-icons:youtube" data-inline="false"></span></a>
 						</li>
 					</ul>
 				</Section>
@@ -107,12 +142,12 @@
 					</div>
 				</section>
 			</div>
+			<p class="text-muted col-12 mt-4">&copy; Judith Grau 2021</p>
 		</footer>
 	</div>
-   
-	
 	<!--js bootstrap 4.6.0 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
-		<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
-		<title>Todo Dulce y Chocolatoso</title>
-		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
+	<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
+    <title>Todo Dulce y Chocolatoso</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">		
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="./img/logo.ico">
+</head>
 <body>
 	<div class="container-fluid">
 		<header class="header">
-			<button class="switch ml-5 mt-2" id="switch">
-				<span><i class="fas fa-sun"></i></span>
-				<span><i class="fas fa-moon"></i></span>
-			</button>
+			<div class="modo_nocturno">
+				<button class="switch mr-3" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+			</div>
+			
 			<div class="header__logo text-center mb-2">
-				<a href="./index.html"><img class="text-center" src="./img/logo.png" alt="imagen de logo"></a>
+				<a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
 			</div>
 			<nav class="header__nav navbar navbar-expand-lg navbar-light bg-light" id="nav">
 				<button class="header__nav--button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<img  class="img-fluid w-100 h-auto" src="./img/logo.png" alt="imagen de logo">
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				
 				<div class="header__nav--navbar collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,8 +45,9 @@
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item font-weight-bold" href="./ramo_rosas.html">Ramo de rosas</a>
 								<a class="dropdown-item font-weight-bold" href="./rosas_pack.html">Pack de rosas</a>
-								<a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones besos</a>
+								<a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones</a>
 								<a class="dropdown-item font-weight-bold" href="./figuras_chocolate.html">Figuras de chocolate</a>
+							</div>
 						</li>
 						<li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
 							<a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
@@ -54,13 +59,12 @@
 							<a class="nav-link" href="./contact.html">Contact</a>
 						</li>
 					</ul>
+					
 				</div>
 			</nav>
-			
 		</header>
-		
 			<main>
-				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+				<div id="carouselExampleCaptions" class="carousel slide mb-sm-5" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -99,20 +103,22 @@
 					</a>
 				</div>
 
-				<div class="container-fluid_index">
-					<div class="row_index">
-						<section class="galeria">
-						<!--galería de productos-->
-							<h2 class="ejemplo">Los productos más vendidos</h2>
-							<div class="imagenes"></div>
-						</section>
+				<!--Banner de productos más vendidos-->
+				<div class="body mb-5">
+					<div class="blog-post">
+						<div class="blog-post__img">
+							<img class="imagenes"></img>
+						</div>
+						<div class="blog-post__info">
+							<h3 class="blog-post__title">Productos más vendidos</h3>
+							<p class="blog-post__text">
+								Siempre hay un momento especial donde podemos mimar a nuestros seres queridos. Utilizamos materias primas de primera calidad.
+							</p>
+							<a href="./products.html" class="blog-post__cta">Ver productos</a>
+						</div>
 					</div>
 				</div>
-
-				
-				
 			</main>
-
 		<footer class="footer">
 			<div class="footer__contenedor foot">
 				<Section class="footer__contenedor--1 sm">
@@ -143,6 +149,7 @@
 					</div>
 				</section>
 			</div>
+			<p class="text-muted col-12 mt-4">&copy; Judith Grau 2021</p>
 		</footer>
 	</div>
 	<!--js bootstrap 4.6.0 -->
