@@ -898,6 +898,8 @@ p.text-muted {
   text-align: center;
   font-size: 0.8rem;
   color: #111111 !important; }
+  body.dark p.text-muted {
+    color: #eec6e9 !important; }
 
 /* main,footer{
     display: none;

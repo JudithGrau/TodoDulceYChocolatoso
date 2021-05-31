@@ -693,6 +693,9 @@ p.text-muted{
     text-align: center;
     font-size: 0.8rem;
     color: $negro !important;
+    body.dark & {
+        color: $color-claro !important;
+    }
 }
 
 /* main,footer{
