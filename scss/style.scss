@@ -90,8 +90,35 @@ p, a, li{
     color: $color-claro;
 }
 /*----------------------------------------------------------------------------INDEX--------------------------------------------------------------------------*/
+
 #nav{
     z-index: 5;
+    background: {
+        color: $color-claro !important;
+    }
+    body.dark & {
+        background: $grisOscuro !important;
+        box-shadow: $sombraLight !important;
+    }
+}
+.nav-link{
+    color: $color-oscuro  !important;
+}
+#icono{
+    color: black !important;
+}
+.dropdown-item{
+    color: $color-oscuro !important;
+    background: {
+        color: $color-claro;
+    }
+    body.dark & {
+        color: $color-oscuro;
+        background: $grisOscuro !important;
+        box-shadow: $sombraLight !important;
+    }
+}
+.dropdown-divider{
     body.dark & {
         background: $grisOscuro !important;
         box-shadow: $sombraLight !important;
@@ -544,34 +571,7 @@ nav {
         family: $fuente-principal !important;
     }
 }
-#nav{
-    background: {
-        color: $color-claro !important;
-    }
-}
-.nav-link{
-    color: $color-oscuro  !important;
-}
-#icono{
-    color: black !important;
-}
-.dropdown-item{
-    color: $color-oscuro !important;
-    background: {
-        color: $color-claro;
-    }
-    body.dark & {
-        color: $color-oscuro;
-        background: $grisOscuro !important;
-        box-shadow: $sombraLight !important;
-    }
-}
-.dropdown-divider{
-    body.dark & {
-        background: $grisOscuro !important;
-        box-shadow: $sombraLight !important;
-    }
-}
+
 
 /*---------------------------------------------------------------------------CONTACT US-------------------------------------------------------------------*/
 form{
@@ -1069,7 +1069,7 @@ body{
     border-radius: 20px;
     body.dark & {
         background: $grisOscuro !important;
-        box-shadow: $sombraLight !important;
+        box-shadow: 20px 10px 10px 20px rgba(0,0,0,.16) !important;
     }
 }
 

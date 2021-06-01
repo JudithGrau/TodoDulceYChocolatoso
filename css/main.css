@@ -374,10 +374,29 @@ p, a, li {
 
 /*----------------------------------------------------------------------------INDEX--------------------------------------------------------------------------*/
 #nav {
-  z-index: 5; }
+  z-index: 5;
+  background-color: #eec6e9 !important; }
   body.dark #nav {
     background: #222222 !important;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
+
+.nav-link {
+  color: #b325a0 !important; }
+
+#icono {
+  color: black !important; }
+
+.dropdown-item {
+  color: #b325a0 !important;
+  background-color: #eec6e9; }
+  body.dark .dropdown-item {
+    color: #b325a0;
+    background: #222222 !important;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
+
+body.dark .dropdown-divider {
+  background: #222222 !important;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
 
 .nav-item:hover {
   border-radius: .2em;
@@ -775,27 +794,6 @@ body.dark .card-body {
 
 nav {
   font-family: "Nunito", sans-serif !important; }
-
-#nav {
-  background-color: #eec6e9 !important; }
-
-.nav-link {
-  color: #b325a0 !important; }
-
-#icono {
-  color: black !important; }
-
-.dropdown-item {
-  color: #b325a0 !important;
-  background-color: #eec6e9; }
-  body.dark .dropdown-item {
-    color: #b325a0;
-    background: #222222 !important;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
-
-body.dark .dropdown-divider {
-  background: #222222 !important;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
 
 /*---------------------------------------------------------------------------CONTACT US-------------------------------------------------------------------*/
 form {
@@ -1203,7 +1201,7 @@ body{
   border-radius: 20px; }
   body.dark .contenedor__login-register form {
     background: #222222 !important;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
+    box-shadow: 20px 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
 
 .contenedor__login-register form h2 {
   font-size: 30px;
