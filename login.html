@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Chocolates artesanales, ramo de rosas, pack de rosas, rosas sueltas , cajas de bombones, chocolates personalizados, souvenirs de chocolate, figuras de chocolate. Regalos 15 años, cumpleaños, novios, aniversarios">
+	<meta name="keywords" content="chocolates, chocolates artesanales, todo dulce y chocolatoso, bombones, caja de bombones, figuras de chocolate, ramos de rosas, pack de rosas, rosas sueltas, huevos de pascua, regalos, todo dulce, chocolatoso">
+    <title>Login y Register - Todo Dulce y Chocolatoso</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="./img/logo.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="modo_nocturno">
+            <div class="rg mr-5">
+                <a class="user text-dark mr-3" href="./login.html"><span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-inline="false"></span></a>
+                <a class="shop text-dark" href="./ramo_rosas.html"><span class="iconify" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span></a>
+            </div>
+            <button class="switch mr-3" id="switch">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+            </button>
+        </div>
+        
+        <div class="header__logo text-center mb-2">
+            <a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
+        </div>
+        <nav class="header__nav navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <button class="header__nav--button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="header__nav--navbar collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav col-12 row ml-4 pr-0">
+                    <li class="nav-item active col-2 font-weight-bold">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown col-3  mr-0 pr-0 font-weight-bold">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu pb-0 pt-0" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item font-weight-bold" href="./products.html">Galería de productos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item font-weight-bold" href="./ramo_rosas.html">Ramo de rosas</a>
+                            <a class="dropdown-item font-weight-bold" href="./rosas_pack.html">Pack de rosas</a>
+                            <a class="dropdown-item font-weight-bold" href="./bombones.html">Bombones</a>
+                            <a class="dropdown-item font-weight-bold" href="./figuras_chocolate.html">Figuras de chocolate</a>
+                        </div>
+                    </li>
+                    <li class="nav-item col-3 ml-0 pl-0 font-weight-bold">
+                        <a class="nav-link mr-3 pl-0" href="./fechas_especiales.html">Fechas Especiales</a>
+                    </li>
+                    <li class="nav-item col-2 font-weight-bold">
+                        <a class="nav-link mr-3" href="./about_us.html">About us</a>
+                    </li>
+                    <li class="nav-item col-2 font-weight-bold">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+
+        <main class="main">
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    <script>
+        //Ejecutando funciones
+    document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+    document.getElementById("btn__registrarse").addEventListener("click", register);
+    window.addEventListener("resize", anchoPage);
+
+    //Declarando variables
+    var formulario_login = document.querySelector(".formulario__login");
+    var formulario_register = document.querySelector(".formulario__register");
+    var contenedor_login_register = document.querySelector(".contenedor__login-register");
+    var caja_trasera_login = document.querySelector(".caja__trasera-login");
+    var caja_trasera_register = document.querySelector(".caja__trasera-register");
+
+        //FUNCIONES
+
+    function anchoPage(){
+
+        if (window.innerWidth > 850){
+            caja_trasera_register.style.display = "block";
+            caja_trasera_login.style.display = "block";
+        }else{
+            caja_trasera_register.style.display = "block";
+            caja_trasera_register.style.opacity = "1";
+            caja_trasera_login.style.display = "none";
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_register.style.display = "none";   
+        }
+    }
+
+    anchoPage();
+
+
+        function iniciarSesion(){
+            if (window.innerWidth > 850){
+                formulario_login.style.display = "block";
+                contenedor_login_register.style.left = "10px";
+                formulario_register.style.display = "none";
+                caja_trasera_register.style.opacity = "1";
+                caja_trasera_login.style.opacity = "0";
+            }else{
+                formulario_login.style.display = "block";
+                contenedor_login_register.style.left = "0px";
+                formulario_register.style.display = "none";
+                caja_trasera_register.style.display = "block";
+                caja_trasera_login.style.display = "none";
+            }
+        }
+
+        function register(){
+            if (window.innerWidth > 850){
+                formulario_register.style.display = "block";
+                contenedor_login_register.style.left = "410px";
+                formulario_login.style.display = "none";
+                caja_trasera_register.style.opacity = "0";
+                caja_trasera_login.style.opacity = "1";
+            }else{
+                formulario_register.style.display = "block";
+                contenedor_login_register.style.left = "0px";
+                formulario_login.style.display = "none";
+                caja_trasera_register.style.display = "none";
+                caja_trasera_login.style.display = "block";
+                caja_trasera_login.style.opacity = "1";
+            }
+        }
+    </script>
+    <script>
+        const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+
+    //Guardamos el modo en localstorage.
+    if(document.body.classList.contains('dark')){
+        localStorage.setItem('dark-mode', 'true');
+    }else{
+        localStorage.setItem('dark-mode', 'false');
+    }
+});
+
+//Obtenemos el modo actual.
+if(localStorage.getItem('dark-mode') === 'true'){
+    document.body.classList.add('dark');
+    btnSwitch.classList.add('active');
+
+} else {
+    document.body.classList.remove('dark');
+    btnSwitch.classList.remove('active');
+}
+    </script>
+</body>
+</html>

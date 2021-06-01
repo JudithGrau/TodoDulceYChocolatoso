@@ -1,3 +1,6 @@
+
+//--------------------Botón de Modo Oscuro-----------------------
+
 const btnSwitch = document.querySelector('#switch');
 
 btnSwitch.addEventListener('click', () => {
@@ -21,3 +24,4 @@ if(localStorage.getItem('dark-mode') === 'true'){
     document.body.classList.remove('dark');
     btnSwitch.classList.remove('active');
 }
+

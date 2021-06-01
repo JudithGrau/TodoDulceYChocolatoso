@@ -116,6 +116,11 @@ p, a, li{
         background: $color-oscuro;
     }
 }
+.user,.shop{
+    body.dark & {
+        color: $color-oscuro !important;
+    }
+}
 
 /*------HEADER-------*/
 header{
@@ -843,12 +848,7 @@ p.text-muted{
     /* .about__text--p1 {
         background-color: green;
     } */
-    .about__text{
-        /* overflow: auto; */
-        /* margin-left: 200px !important;
-        width: 400px !important; */
 
-    }
     .about__text--p2 .about__text--p3{
         visibility: hidden;
     }
@@ -958,5 +958,194 @@ p.text-muted{
     .gallery__item:nth-child(4){
         grid-column-start: span 3;
         grid-row-start: span 3;
+    }
+}
+
+/*---------------------------------------------------------Login y Registro------------------------------------------------------------------------*/
+/* 
+body{
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+.main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: $fuente-principal;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgb(156, 5, 136) !important;
+    body.dark & {
+        background: $grisOscuro !important;
+        box-shadow: $sombraLight !important;
+    }
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+    body.dark & {
+        color: $color-oscuro;
+    }
+}
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+    body.dark & {
+        color: $color-claro !important;
+    }
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: 'Nunito';
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #c95fbb 0%, #e08dd5 100%);
+    border-radius: .8rem;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background-image: linear-gradient(to right, rgb(224, 141, 213)  0%,rgb(201, 95, 187)100%);
+    color: $color-oscuro !important;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+    body.dark & {
+        background: $grisOscuro !important;
+        box-shadow: $sombraLight !important;
+    }
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $color-oscuro;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    body.dark & {
+        background: $color-claro !important;
+    }
+}
+
+.contenedor__login-register form button{
+    padding: 1rem 2rem;
+    font-family: 'Nunito';
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #c95fbb 0%, #e08dd5 100%);
+    border-radius: .8rem;
+
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
     }
 }
