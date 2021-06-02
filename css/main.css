@@ -611,6 +611,7 @@ header {
   list-style-type: none; }
 
 .caracteristicas {
+  font-family: "Nunito", sans-serif !important;
   text-align: center;
   padding-top: 50px; }
 
@@ -1095,7 +1096,35 @@ p.text-muted {
     visibility: hidden; }
   .about__text--p3 {
     visibility: hidden;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+    font-size: 27px; }
+  .contenedor_productos {
+    height: 320px;
+    width: 250px; }
+  .container {
+    margin-top: 0 !important; }
+  .products h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #eec6e9;
+    margin: 0.5em; }
+  .tit {
+    font-size: 1.25rem !important; }
+  .lado {
+    width: 100%;
+    height: 100%; }
+  .caracteristicas {
+    padding-top: 25px; }
+  .caracteristicas h4 {
+    font-size: 1.2rem; }
+  .caracteristicas ul {
+    margin-bottom: 1rem;
+    padding-left: 0; }
+  .caracteristicas li {
+    font-size: 1rem !important; } }
 
 /*----------------------------------MEDIA QUERIES--------------------------------------------------*/
 /*Tamaño de Tablet*/
@@ -1126,14 +1155,6 @@ p.text-muted {
     grid-row-start: span 3; } }
 
 /*---------------------------------------------------------Login y Registro------------------------------------------------------------------------*/
-/* 
-body{
-    background-image: url(../images/bg4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-} */
 .main {
   width: 100%;
   padding: 20px;
