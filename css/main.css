@@ -958,11 +958,14 @@ p.text-muted {
     padding: 8px 0px;
     margin: 0px 16px 0px 0px; }
   .nav-item:hover {
-    background: #eca2e3;
+    background: #eec6e9;
     border: 1px solid #eca2e3;
     color: #b325a0;
     border-radius: .2em;
     transform: scale(0.95); }
+    body.dark .nav-item:hover {
+      background: #222222 !important;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16) !important; }
   .nav-link {
     margin-left: 0px 16px 0px 0px !important; } }
 

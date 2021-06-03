@@ -769,11 +769,15 @@ p.text-muted{
         margin: 0px 16px 0px 0px;
     }
     .nav-item:hover{
-        background: $color-claro-hover;
+        background: $color-claro;
         border: 1px solid $color-claro-hover;
         color: $color-oscuro;
         border-radius: .2em;
         transform: scale(0.95);
+        body.dark & {
+            background: $grisOscuro !important;
+            box-shadow: $sombraLight !important;
+        }
     }
     .nav-link {
         margin-left: 0px 16px 0px 0px !important;
