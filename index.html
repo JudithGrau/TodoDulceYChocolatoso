@@ -10,27 +10,25 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">		
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 	<link rel="icon" href="./img/logo.ico">
 </head>
 <body>
 	<!--Botón de whatsapp-->
-	<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+	<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank" title="Mandanos un WhatsApp"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 	<div class="container-fluid">
 		<header class="header">
-			
 			<div class="modo_nocturno">
 				<div class="rg mr-5">
-					<a class="user text-dark mr-3" id="user" href="./login.html"><span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-inline="false"></span></a>
-					<a class="shop text-dark" id="shop" href="./ramo_rosas.html"><span class="iconify" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span></a>
+					<a class="user text-dark mr-3" id="user" href="./login.html" title="ingresá"><span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-inline="false"></span></a>
+					<a class="shop text-dark" id="shop" href="./ramo_rosas.html" title="Tu cesta está vacía"><span class="iconify" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span></a>
 				</div>
-				<button class="switch mr-3" id="switch">
+				<button class="switch mr-3" id="switch" title="Modo oscuro">
 					<span><i class="fas fa-sun"></i></span>
 					<span><i class="fas fa-moon"></i></span>
 				</button>
 			</div>
-			
 			<div class="header__logo text-center mb-2">
 				<a href="./index.html"><img class="img-responsive" src="./img/logo.png" alt="imagen de logo"></a>
 			</div>
@@ -71,66 +69,66 @@
 				</div>
 			</nav>
 		</header>
-			<main>
-				<div id="carouselExampleCaptions" class="carousel slide mb-sm-5" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-interval="4000">
-							<a href="#blog_p"><img src="./img/slide4-min.jpg" class="d-block w-100" alt="foto_slide1"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h2 class="slide__title">Endulzá esos momentos únicos</h2>
-								<p>Con chocolate de excelente calidad!</p>
-							</div>
-						</div>
-						<div class="carousel-item" data-interval="4000">
-							<a href="#blog_p"><img src="./img/slide2-min.jpg" class="d-block w-100" alt="foto_slide2"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h2 class="slide__title">Regalá chocolates a tus seres queridos</h2>
-							<p>Siempre personalizado</p>
-							</div>
-						</div>
-						<div class="carousel-item" data-interval="4000">
-							<a href="#blog_p"><img src="./img/slide8-min.jpg" class="d-block w-100" alt="foto_slide3"></a>
-							<div class="carousel-caption d-none d-md-block">
-								<h2 class="slide__title">Contactanos y hacé tu pedido</h2>
-							<p>Seguinos en Instagram y Facebook</p>
-							</div>
+		<main>
+			<div id="carouselExampleCaptions" class="carousel slide mb-sm-5" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-interval="4000">
+						<a href="#blog_p"><img src="./img/slide4-min.jpg" class="d-block w-100" alt="foto_slide1"></a>
+						<div class="carousel-caption d-none d-md-block">
+							<h2 class="slide__title">Endulzá esos momentos únicos</h2>
+							<p>Con chocolate de excelente calidad!</p>
 						</div>
 					</div>
-					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
+					<div class="carousel-item" data-interval="4000">
+						<a href="#blog_p"><img src="./img/slide2-min.jpg" class="d-block w-100" alt="foto_slide2"></a>
+						<div class="carousel-caption d-none d-md-block">
+							<h2 class="slide__title">Regalá chocolates a tus seres queridos</h2>
+						<p>Siempre personalizado</p>
+						</div>
+					</div>
+					<div class="carousel-item" data-interval="4000">
+						<a href="#blog_p"><img src="./img/slide8-min.jpg" class="d-block w-100" alt="foto_slide3"></a>
+						<div class="carousel-caption d-none d-md-block">
+							<h2 class="slide__title">Contactanos y hacé tu pedido</h2>
+						<p>Seguinos en Instagram y Facebook</p>
+						</div>
+					</div>
 				</div>
-				
-				
+				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			
+			
 
-				<!--Banner de productos más vendidos-->
-				<div class="body mb-5" id="blog_p">
-					<div class="blog-post">
-						<div class="blog-post__img">
-							<img class="imagenes"></img>
-						</div>
-						<div class="blog-post__info">
-							<h3 class="blog-post__title">Productos más vendidos</h3>
-							<p class="blog-post__text">
-								Siempre hay un momento especial donde podemos mimar a nuestros seres queridos. <br>
-								Hay muchas opciones para cada uno de ellos. <br>
-								Todos nuestros productos están hechos con materias primas de primera calidad.
-							</p>
-							<a href="./products.html" class="blog-post__cta">Ver productos</a>
-						</div>
+			<!--Banner de productos más vendidos-->
+			<div class="body mb-5" id="blog_p">
+				<div class="blog-post">
+					<div class="blog-post__img">
+						<img class="imagenes"></img>
+					</div>
+					<div class="blog-post__info">
+						<h1 class="blog-post__title">Productos más vendidos</h1>
+						<p class="blog-post__text">
+							Siempre hay un momento especial donde podemos mimar a nuestros seres queridos. <br>
+							Hay muchas opciones para cada uno de ellos. <br>
+							Todos nuestros productos están hechos con materias primas de primera calidad.
+						</p>
+						<a href="./products.html" class="blog-post__cta">Ver productos</a>
 					</div>
 				</div>
-			</main>
+			</div>
+		</main>
 		<footer class="footer">
 			<div class="footer__contenedor foot">
 				<Section class="footer__contenedor--1 sm">

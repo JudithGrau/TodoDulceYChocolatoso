@@ -333,7 +333,7 @@ h3 {
 p, a, li {
   font-size: 1.3rem; }
 
-/*-------------------------Switch modo oscuro del index--------------------------*/
+/*-------------------------Switch modo oscuro--------------------------*/
 .switch {
   background: #343D5B;
   border-radius: 1000px;
@@ -372,7 +372,7 @@ p, a, li {
 .fa-sun, .fa-moon {
   color: #eec6e9; }
 
-/*--Botón de whatsapp--*/
+/*-------------------------Botón de whatsapp--------------------------*/
 .whatsapp {
   position: fixed;
   width: 60px;
@@ -389,7 +389,15 @@ p, a, li {
 .whatsapp-icon {
   margin-top: 13px; }
 
-/*----------------------------------------------------------------------------INDEX--------------------------------------------------------------------------*/
+/*--------------------------Header-------------------------------------*/
+header {
+  background: #eec6e9;
+  padding: 10px 0; }
+  body.dark header {
+    background: #222222;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); }
+
+/*--------------------------Header-nav----------------------------------*/
 #nav {
   z-index: 5;
   background-color: #eec6e9 !important; }
@@ -435,15 +443,7 @@ body.dark .header__nav--button {
 body.dark .user, body.dark .shop {
   color: #b325a0 !important; }
 
-/*------HEADER-------*/
-header {
-  background: #eec6e9;
-  padding: 10px 0; }
-  body.dark header {
-    background: #222222;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); }
-
-/*------MAIN-HERO------*/
+/*--------------------------Main-carousel----------------------------------*/
 .slide {
   margin-top: 10px; }
 
@@ -462,13 +462,13 @@ header {
   text-transform: uppercase;
   margin-bottom: .5em; }
 
-/*------MAIN-PRODUCTOS MÁS VENDIDOS------*/
+/*--------------------------MAIN-PRODUCTOS MÁS VENDIDOS----------------------------------*/
+/*-------------------Main-Banner animado-------------*/
 .blog-post {
   width: 100%;
   max-width: 98rem;
   padding: 5rem;
   background-color: #eec6e9;
-  /* box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2); */
   display: flex;
   align-items: center;
   border-radius: .8rem; }
@@ -516,20 +516,21 @@ header {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   color: #fff;
+  margin-left: 1rem;
   background-image: linear-gradient(to right, #c95fbb 0%, #e08dd5 100%);
   border-radius: .8rem;
   text-decoration: none; }
 
 .blog-post__title {
   font-size: 2rem;
-  color: #b325a0; }
+  color: #b325a0;
+  text-align: left; }
 
 .blog-post__cta:hover {
   background-image: linear-gradient(to right, #e08dd5 0%, #c95fbb 100%);
   text-decoration: none !important;
   color: #b325a0 !important; }
 
-/*-------------------Main-Banner animado-------------*/
 .imagenes {
   width: 100%;
   box-shadow: 0px 0px 15px black;
